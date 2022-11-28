@@ -15,7 +15,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.MapGet("/GetAllDNSRecords",  () =>
+app.MapGet("/GetAllDNSRecords", () =>
 {
     DNSRecords records = new DNSRecords();
 
@@ -28,14 +28,14 @@ app.MapGet("/GetAllDNSRecords",  () =>
         foreach (var item in identity)
         {
             records.DNSRecordList.Add(new DNS(
-                item.Words.First(i => i.Key == "name").Value,
-                item.Words.First(i => i.Key == "address").Value,
+                item.Words.FirstOrDefault(i => i.Key == "name").Value,
+                item.Words.FirstOrDefault(i => i.Key == "address").Value,
                 item.Words.FirstOrDefault(i => i.Key == "comment").Value));
         }
         var resultJSON = JsonSerializer.Serialize<List<DNS>>(records.DNSRecordList);
-        return Results.Json(resultJSON);   
+        return Results.Json(resultJSON);
     }
-})
+});
 
 app.Run();
 
