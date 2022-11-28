@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mikrotik_DNS_Lookup", "Mikrotik_DNS_Lookup\Mikrotik_DNS_Lookup.csproj", "{EC713FDB-F992-43AE-8BE4-FE633B3FC32C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC713FDB-F992-43AE-8BE4-FE633B3FC32C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC713FDB-F992-43AE-8BE4-FE633B3FC32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC713FDB-F992-43AE-8BE4-FE633B3FC32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC713FDB-F992-43AE-8BE4-FE633B3FC32C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7F74047-1581-40E7-ACB0-00863FC58DEA}
+	EndGlobalSection
+EndGlobal
